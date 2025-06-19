@@ -1,0 +1,66 @@
+HTML ELEMENTS DOCUMENTATION
+
+1. HTML ELEMENTS EXPLANATION:
+
+<!DOCTYPE html> - Declares the document type and HTML version
+<html> - The root element that contains all other HTML elements
+<head> - Contains meta-information about the document
+<meta> - Provides metadata about the HTML document
+<title> - Defines the title of the document (shown in browser's title bar)
+<link> - Links to external resources like CSS files or favicons
+<body> - Contains the visible content of the webpage
+<header> - Represents introductory content, typically at the top of the page
+<nav> - Defines a section with navigation links
+<main> - Specifies the main content of the document
+<section> - Defines a section in a document
+<footer> - Represents the footer of a document or section
+<h1> to <h6> - Heading elements (h1 being the most important, h6 the least)
+<p> - Defines a paragraph
+<ul> - Defines an unordered list (used for skills, projects descriptions, and platforms)
+<ol> - Defines an ordered list (used for educational background)
+<li> - Defines a list item
+<table> - Creates a table (used for projects experience)
+<thead> - Groups header content in a table
+<tbody> - Groups body content in a table
+<tr> - Defines a row in a table
+<th> - Defines a header cell in a table
+<td> - Defines a standard cell in a table
+<img> - Embeds an image (used for profile picture)
+<a> - Creates a hyperlink (used for email, LinkedIn, GitHub, LeetCode links)
+<form> - Creates an HTML form for user input (used in contact page)
+<input> - Defines an input control (used for name, email, phone fields)
+<textarea> - Defines a multi-line text input control (used for message field)
+<select> - Defines a drop-down list (used for project type selection)
+<option> - Defines an option in a drop-down list
+<label> - Defines a label for an input element
+<button> - Creates a clickable button (used for form submission)
+<strong> - Defines important text (used to emphasize project names)
+
+2. INPUT TYPE SELECTION RATIONALE:
+
+text - Used for name field to allow entry of plain text
+email - Used for email field to ensure proper email format validation and provide appropriate keyboard on mobile devices
+tel - Used for phone number with pattern attribute to validate 10-digit format and provide appropriate keyboard on mobile devices
+textarea - Used for message field to allow multi-line text entry for detailed project inquiries
+checkbox - Used for preferred contact methods to allow multiple selections (email, phone, text)
+radio - Used for inquiry type to restrict to a single selection (general, business, support)
+select - Used for project type selection to provide a clean, space-saving dropdown of predefined options relevant to my technical skills
+date - Used for deadline field to ensure proper date format and provide a date picker with minimum date set to current date
+range - Used for budget range to allow visual selection within a defined range with step increments
+
+3. NAVIGATION STRUCTURE:
+
+My navigation structure uses an unordered list (<ul>) with list items (<li>) containing anchor (<a>) elements.
+This is a common and accessible pattern for creating navigation menus.
+
+The navigation is placed in the <header> element on each page, ensuring consistency across the three pages:
+- portfolio.html (main portfolio page displaying my skills, education, and projects)
+- about.html (detailed information about me, my projects, and achievements)
+- contact.html (contact form and direct contact information)
+
+The navigation allows visitors to easily move between all pages of the website.
+Additional internal links on the about page connect back to the portfolio page, while external links
+point to my professional profiles on GitHub, LeetCode, and GeeksforGeeks.
+
+In the footer section, I've included my email and phone number for direct contact options
+on every page, ensuring visitors can reach out regardless of which page they're viewing.
