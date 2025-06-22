@@ -1,0 +1,76 @@
+/* External CSS file for main styling */
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Profile card styling using class selector */
+.profile-card {
+    max-width: 350px;
+    margin: 40px auto;
+    padding: 24px 20px 32px 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 32px 0 rgba(0,0,0,0.12);
+    border: 2px solid #dde9fa;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+
+/* Add a shadow effect on hover */
+.profile-card:hover {
+    box-shadow: 0 12px 48px 0 rgba(0,0,0,0.18);
+}
+
+/* ID selector for profile image */
+#profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3357c7;
+    margin-bottom: 12px;
+}
+
+/* Element selectors */
+h1 {
+    color: #3357c7;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #2d3246;
+    margin: 10px 0 8px 0;
+}
+
+ul {
+    list-style: circle inside;
+    margin-bottom: 15px;
+}
+
+li {
+    margin: 4px 0;
+    color: #444;
+}
+
+/* Attribute selector: All external links get underline and color */
+a[href^="https"] {
+    color: #0077b5;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+a[href^="mailto"] {
+    color: #c73c3c;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/* Bonus: Hover effect on contact links */
+.contact a:hover {
+    color: #ff9800;
+    text-shadow: 0 1px 4px #ffc;
+}
