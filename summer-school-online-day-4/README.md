@@ -83,24 +83,3 @@ Interactive calculator supporting:
 4. **Control Flow**: Making decisions and repeating actions
 5. **Functions**: Different ways to define and use functions
 6. **Callbacks**: Higher-order functions and functional programming basics
-
-## 🔧 Features
-
-- Interactive web interface
-- Clear console logging
-- Error handling and validation
-- Comprehensive examples and explanations
-- Bonus advanced concepts
-
-## 📝 Notes
-
-- All examples include detailed explanations
-- Code follows JavaScript best practices
-- Interactive prompts enhance learning experience
-- Console output provides additional debugging information
-
----
-
-**Author**: JavaScript Learning Assignment  
-**Date**: 2025  
-**Topics**: JavaScript Fundamentals
