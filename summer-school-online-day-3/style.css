@@ -1,0 +1,230 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Grid Container - Main Layout Structure */
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Header Styles - Different background color */
+.header {
+    grid-area: header;
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Sidebar Styles - Different background color */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #34495e;
+    color: white;
+    padding: 1.5rem 0;
+}
+
+/* Sticky Navigation */
+.sticky-nav {
+    position: sticky;
+    top: 20px;
+    padding: 0 1.5rem;
+}
+
+.sticky-nav h3 {
+    color: #ecf0f1;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.sticky-nav ul {
+    list-style: none;
+}
+
+.sticky-nav li {
+    margin-bottom: 1rem;
+}
+
+.sticky-nav a {
+    color: #bdc3c7;
+    text-decoration: none;
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.sticky-nav a:hover {
+    color: white;
+    background-color: #2c3e50;
+    border-left-color: #3498db;
+    transform: translateX(5px);
+}
+
+/* Main Content Styles - Different background color */
+.main-content {
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.main-content section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.main-content section:last-child {
+    border-bottom: none;
+}
+
+.main-content h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+}
+
+.main-content p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Footer Styles - Different background color */
+.footer {
+    grid-area: footer;
+    background-color: #1a252f;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design - Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+            "header"
+            "sidebar"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+    }
+    
+    .sidebar {
+        padding: 1rem 0;
+    }
+    
+    .sticky-nav {
+        position: static;
+        padding: 0 1rem;
+    }
+    
+    .sticky-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .sticky-nav li {
+        margin-bottom: 0;
+    }
+    
+    .sticky-nav a {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+    
+    .main-content {
+        padding: 1.5rem;
+    }
+    
+    .header {
+        padding: 1.5rem;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .main-content {
+        padding: 1rem;
+    }
+    
+    .main-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .sticky-nav ul {
+        flex-direction: column;
+    }
+    
+    .sticky-nav a {
+        white-space: normal;
+    }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

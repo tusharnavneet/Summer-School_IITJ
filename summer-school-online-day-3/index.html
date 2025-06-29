@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar's Tech Blog - Sticky Grid Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Tushar's Tech Blog</h1>
+            <p>Exploring the world of web development and technology</p>
+        </header>
+
+        <!-- Sidebar with Sticky Navigation -->
+        <aside class="sidebar">
+            <nav class="sticky-nav">
+                <h3>Blog Categories</h3>
+                <ul>
+                    <li><a href="#web-dev">Web Development</a></li>
+                    <li><a href="#css-grid">CSS Grid Mastery</a></li>
+                    <li><a href="#javascript">JavaScript Tips</a></li>
+                    <li><a href="#responsive">Responsive Design</a></li>
+                    <li><a href="#performance">Web Performance</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section id="web-dev">
+                <h2>🚀 Modern Web Development Trends</h2>
+                <p>Web development has evolved significantly over the past few years. From simple static websites to complex single-page applications, the landscape continues to change rapidly.</p>
+                <p>As a developer, staying updated with the latest frameworks, tools, and best practices is crucial. React, Vue, and Angular continue to dominate the frontend space, while Node.js remains a popular choice for backend development.</p>
+                <p>The rise of JAMstack architecture has revolutionized how we think about web applications. By pre-building markup and enhancing with JavaScript, we can create incredibly fast and secure websites.</p>
+                <p>Progressive Web Apps (PWAs) are bridging the gap between web and native applications, offering users app-like experiences directly in their browsers.</p>
+                <p>WebAssembly is opening new possibilities for web applications, allowing languages like Rust, C++, and Go to run in browsers with near-native performance.</p>
+            </section>
+
+            <section id="css-grid">
+                <h2>🎨 Mastering CSS Grid Layout</h2>
+                <p>CSS Grid has transformed how we approach web layouts. Unlike Flexbox, which is one-dimensional, Grid allows us to work with both rows and columns simultaneously.</p>
+                <p>Grid template areas provide an intuitive way to define layouts using named grid areas. This makes your CSS more readable and maintainable.</p>
+                <p>The minmax() function is incredibly powerful for creating responsive layouts without media queries. It allows elements to grow and shrink within defined boundaries.</p>
+                <p>Grid auto-placement algorithms are smart enough to fill gaps in your layout automatically, making complex designs much easier to implement.</p>
+                <p>Combining Grid with Flexbox gives you the best of both worlds - use Grid for overall page layout and Flexbox for component-level arrangements.</p>
+                <p>Browser support for CSS Grid is excellent, with all modern browsers fully supporting the specification since 2017.</p>
+            </section>
+
+            <section id="javascript">
+                <h2>⚡ Essential JavaScript Tips and Tricks</h2>
+                <p>JavaScript continues to be the backbone of modern web development. Understanding ES6+ features is essential for writing clean, efficient code.</p>
+                <p>Destructuring assignment makes code more readable and helps avoid repetitive property access. It works with both objects and arrays.</p>
+                <p>The spread operator (...) is incredibly versatile - use it for array manipulation, object cloning, and function parameter handling.</p>
+                <p>Async/await syntax has made asynchronous programming much more approachable, reducing callback hell and making promises easier to work with.</p>
+                <p>Array methods like map(), filter(), and reduce() enable functional programming patterns that lead to more predictable and testable code.</p>
+                <p>Template literals with embedded expressions make string manipulation and HTML generation much cleaner than traditional concatenation.</p>
+                <p>Optional chaining (?.) and nullish coalescing (??) operators help write more robust code that handles undefined values gracefully.</p>
+            </section>
+
+            <section id="responsive">
+                <h2>📱 Responsive Design Best Practices</h2>
+                <p>Mobile-first design is no longer optional - it's essential. With mobile traffic exceeding desktop traffic, responsive design is crucial for user experience.</p>
+                <p>CSS Grid and Flexbox work beautifully together for creating responsive layouts that adapt to any screen size without complex media queries.</p>
+                <p>Viewport units (vw, vh, vmin, vmax) provide powerful ways to create layouts that scale with the screen size, perfect for hero sections and full-screen designs.</p>
+                <p>Container queries are the future of responsive design, allowing components to adapt based on their container size rather than viewport size.</p>
+                <p>Performance matters on mobile devices. Optimize images, minimize JavaScript, and use efficient CSS to ensure fast loading times.</p>
+                <p>Touch-friendly interfaces require larger tap targets, appropriate spacing, and consideration for thumb navigation patterns.</p>
+            </section>
+
+            <section id="performance">
+                <h2>🏃‍♂️ Web Performance Optimization</h2>
+                <p>Website performance directly impacts user experience and search engine rankings. Every millisecond counts in today's fast-paced digital world.</p>
+                <p>Image optimization is often the biggest performance win. Use modern formats like WebP and AVIF, implement lazy loading, and choose appropriate sizing.</p>
+                <p>Code splitting allows you to load only the JavaScript needed for the current page, significantly reducing initial bundle sizes.</p>
+                <p>Critical CSS should be inlined to eliminate render-blocking resources and improve perceived performance.</p>
+                <p>Service workers enable powerful caching strategies, allowing your application to work offline and load instantly on repeat visits.</p>
+                <p>Web Vitals (LCP, FID, CLS) are Google's metrics for measuring user experience. Optimizing for these metrics improves both UX and SEO.</p>
+                <p>Content Delivery Networks (CDNs) reduce latency by serving assets from servers geographically closer to your users.</p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Tushar Navneet. All rights reserved. | Contact: tusharnavneet3@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>
